@@ -1,0 +1,21 @@
+@tablet-widths: ~"(min-width: 660px)";
+@desktop-widths: ~"(min-width: 960px)";
+
+.container() {
+  width: 280px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+}
+
+.line(@font-size; @line-height;) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
